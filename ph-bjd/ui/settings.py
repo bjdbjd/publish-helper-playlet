@@ -14,7 +14,6 @@ class Ui_Settings(object):
         Settings.setObjectName("Settings")
         Settings.resize(641, 735)
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(Settings)
-        self.verticalLayout_2.setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetDefaultConstraint)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setContentsMargins(5, 5, 5, 5)
@@ -200,6 +199,31 @@ class Ui_Settings(object):
         self.deleteScreenshot.setObjectName("deleteScreenshot")
         self.horizontalLayout_9.addWidget(self.deleteScreenshot)
         self.verticalLayout.addLayout(self.horizontalLayout_9)
+        self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_11.setContentsMargins(5, 5, 5, 5)
+        self.horizontalLayout_11.setObjectName("horizontalLayout_11")
+        self.getThumbnails = QtWidgets.QCheckBox(parent=Settings)
+        self.getThumbnails.setObjectName("getThumbnails")
+        self.horizontalLayout_11.addWidget(self.getThumbnails)
+        self.label_13 = QtWidgets.QLabel(parent=Settings)
+        self.label_13.setObjectName("label_13")
+        self.horizontalLayout_11.addWidget(self.label_13)
+        self.rows = QtWidgets.QSpinBox(parent=Settings)
+        self.rows.setMinimum(1)
+        self.rows.setMaximum(9)
+        self.rows.setProperty("value", 4)
+        self.rows.setObjectName("rows")
+        self.horizontalLayout_11.addWidget(self.rows)
+        self.label_8 = QtWidgets.QLabel(parent=Settings)
+        self.label_8.setObjectName("label_8")
+        self.horizontalLayout_11.addWidget(self.label_8)
+        self.cols = QtWidgets.QSpinBox(parent=Settings)
+        self.cols.setMinimum(1)
+        self.cols.setMaximum(9)
+        self.cols.setProperty("value", 4)
+        self.cols.setObjectName("cols")
+        self.horizontalLayout_11.addWidget(self.cols)
+        self.verticalLayout.addLayout(self.horizontalLayout_11)
         self.horizontalLayout_10 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_10.setContentsMargins(5, 5, 5, 5)
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
@@ -759,6 +783,101 @@ class Ui_Settings(object):
 "}\n"
 ""))
         self.deleteScreenshot.setText(_translate("Settings", "上传后删除本地图片"))
+        self.getThumbnails.setText(_translate("Settings", "生成缩略图"))
+        self.label_13.setStyleSheet(_translate("Settings", "QPushButton {\n"
+"    display: inline-block;\n"
+"    padding: 5px 5px;\n"
+"    font-size: 16px;\n"
+"    cursor: pointer;\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    outline: none;\n"
+"    color:#fff;\n"
+"    background-color: #559e24;\n"
+"    border: none;\n"
+"    border-radius: 15px;\n"
+"    box-shadow: 0 9px #999;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background-color: #4a8821;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #3c6f1b;\n"
+"}\n"
+""))
+        self.label_13.setText(_translate("Settings", "横向数量："))
+        self.rows.setStyleSheet(_translate("Settings", "QPushButton {\n"
+"    display: inline-block;\n"
+"    padding: 5px 5px;\n"
+"    font-size: 16px;\n"
+"    cursor: pointer;\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    outline: none;\n"
+"    color:#fff;\n"
+"    background-color: #559e24;\n"
+"    border: none;\n"
+"    border-radius: 15px;\n"
+"    box-shadow: 0 9px #999;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background-color: #4a8821;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #3c6f1b;\n"
+"}\n"
+""))
+        self.label_8.setStyleSheet(_translate("Settings", "QPushButton {\n"
+"    display: inline-block;\n"
+"    padding: 5px 5px;\n"
+"    font-size: 16px;\n"
+"    cursor: pointer;\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    outline: none;\n"
+"    color:#fff;\n"
+"    background-color: #559e24;\n"
+"    border: none;\n"
+"    border-radius: 15px;\n"
+"    box-shadow: 0 9px #999;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background-color: #4a8821;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #3c6f1b;\n"
+"}\n"
+""))
+        self.label_8.setText(_translate("Settings", "纵向数量："))
+        self.cols.setStyleSheet(_translate("Settings", "QPushButton {\n"
+"    display: inline-block;\n"
+"    padding: 5px 5px;\n"
+"    font-size: 16px;\n"
+"    cursor: pointer;\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    outline: none;\n"
+"    color:#fff;\n"
+"    background-color: #559e24;\n"
+"    border: none;\n"
+"    border-radius: 15px;\n"
+"    box-shadow: 0 9px #999;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background-color: #4a8821;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #3c6f1b;\n"
+"}\n"
+""))
         self.label_10.setStyleSheet(_translate("Settings", "QPushButton {\n"
 "    display: inline-block;\n"
 "    padding: 5px 5px;\n"
