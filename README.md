@@ -23,7 +23,9 @@ static/team.json
 
 软件获取地址：
 
-链接：https://pan.baidu.com/s/1cbypJa3f3WP5J3pEPEY-Gw?pwd=v0fb 提取码：v0fb
+度盘链接：https://pan.baidu.com/s/1cbypJa3f3WP5J3pEPEY-Gw?pwd=v0fb 提取码：v0fb
+
+夸克链接：https://pan.quark.cn/s/55da6678f50f 提取码：W76v
 
 Python 3.10
 
