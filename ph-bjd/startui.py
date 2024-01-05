@@ -162,7 +162,6 @@ class mainwindow(QMainWindow, Ui_Mainwindow):
             self.debugBrowser.append("成功获取截图：" + str(res))
             if screenshot_success:
                 # 判断是否需要上传图床
-
                 if autoUploadScreenshot:
                     self.debugBrowser.append("开始自动上传截图到图床" + figureBedPath)
                     self.pictureUrlBrowser.setText("")

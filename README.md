@@ -23,7 +23,8 @@ static/team.json
 
 软件获取地址：
 
-链接：https://pan.baidu.com/s/1cbypJa3f3WP5J3pEPEY-Gw?pwd=v0fb 
-提取码：v0fb
+链接：https://pan.baidu.com/s/1cbypJa3f3WP5J3pEPEY-Gw?pwd=v0fb 提取码：v0fb
+
+Python 3.10
 
 Created by bjd
