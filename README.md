@@ -11,7 +11,7 @@ Publish helper for Playlet v1.0.2
 static/abbreviation.json
 
     "Dolby TrueHD with Dolby Atmos": "Atmos TrueHD",
-    "Dolby Digital Plus with Dolby Atmos": "DDP",
+    "Dolby Digital Plus with Dolby Atmos": "Atmos DDP",
     "Dolby Digital Plus": "DDP",
     "DTS-HD Master Audio": "DTS-HD MA",
     "没有正确识别所产生的信息": "你想要的缩略信息",
@@ -23,7 +23,7 @@ static/team.json
 
 软件获取地址：
 
-链接：https://pan.baidu.com/s/1cbypJa3f3WP5J3pEPEY-Gw?pwd=v0fb 提取码：v0fb
+https://gitee.com/bjdbjd/ph-bjd-playlet/releases
 
 Python 3.10
 

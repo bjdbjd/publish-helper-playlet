@@ -156,7 +156,8 @@ class mainwindow(QMainWindow, Ui_Mainwindow):
             print("成功获取截图函数的返回值")
             self.debugBrowser.append("成功获取截图函数的返回值")
             if getThumbnails:
-                get_thumbnails_success, sv_path =get_thumbnails(videoPath, screenshotPath, rows, cols, screenshotStart, screenshotEnd)
+                get_thumbnails_success, sv_path = get_thumbnails(videoPath, screenshotPath, rows, cols, screenshotStart,
+                                                                 screenshotEnd)
                 if get_thumbnails_success:
                     res.append(sv_path)
             self.debugBrowser.append("成功获取截图：" + str(res))
@@ -350,7 +351,7 @@ class mainwindow(QMainWindow, Ui_Mainwindow):
             year = self.yearEdit.text()
             season = self.seasonBox.text()
             if len(season) < 2:
-                season = '0'+season
+                season = '0' + season
             width = ""
             format = ""
             hdr_format = ""
@@ -435,7 +436,8 @@ class mainwindow(QMainWindow, Ui_Mainwindow):
                         e = str(i)
                         while len(e) < len(str(len(video_files))):
                             e = '0' + e
-                        rename_file_success, output = rename_file_with_same_extension(video_file, fileName.replace('??', e))
+                        rename_file_success, output = rename_file_with_same_extension(video_file,
+                                                                                      fileName.replace('??', e))
 
                         if rename_file_success:
                             self.videoPath.setText(output)
@@ -447,7 +449,8 @@ class mainwindow(QMainWindow, Ui_Mainwindow):
 
                     print("对文件夹重新命名")
                     self.debugBrowser.append("开始对文件夹重新命名")
-                    rename_directory_success, output = rename_directory(os.path.dirname(videoPath), fileName.replace('E??', ''))
+                    rename_directory_success, output = rename_directory(os.path.dirname(videoPath),
+                                                                        fileName.replace('E??', ''))
                     if rename_directory_success:
                         self.videoPath.setText(output)
                         videoPath = output
@@ -458,7 +461,6 @@ class mainwindow(QMainWindow, Ui_Mainwindow):
                 self.debugBrowser.append("您的视频文件路径有误")
         else:
             self.debugBrowser.append('获取中文名失败')
-
 
     def makeTorrentButtonClicked(self):
         isVideoPath, videoPath = check_path_and_find_video(self.videoPath.text())  # 视频资源的路径

@@ -112,8 +112,6 @@ def rename_directory(current_dir, new_name):
         return False, f"重命名目录时发生错误: {e}"
 
 
-
-
 # 此方法用于自动生成一个不易重复的图片文件名称
 def generate_image_filename(base_path):
     now = datetime.datetime.now()
@@ -163,7 +161,6 @@ def check_path_and_find_video(path):
     # 如果最前面加了'file:///'则默认去除
     if path.startswith('file:///'):
         path = path.replace('file:///', '', 1)
-
 
     # 检查路径是否是一个文件
     if os.path.isfile(path):
