@@ -421,6 +421,7 @@ class mainwindow(QMainWindow, Ui_Mainwindow):
                         first_chinese_name + '.' + first_english_name + '.' + year + '.' + ' S' + season + 'E??' + '.' + width + '.' + source + '.' +
                         format + '.' + hdr_format + '.' + commercial_name + '.' + channel_layout + '-' + team)
                 fileName = fileName.replace(' – ', '.')
+                fileName = fileName.replace(' - ', '.')
                 fileName = fileName.replace(': ', '.')
                 fileName = fileName.replace(' ', '.')
                 fileName = fileName.replace('..', '.')
