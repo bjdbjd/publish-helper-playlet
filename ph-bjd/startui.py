@@ -19,7 +19,7 @@ from ui.settings import Ui_Settings
 def starui():
     app = QApplication(sys.argv)
     myMainwindow = mainwindow()
-    myico = QIcon("static/apr-bjd.ico")
+    myico = QIcon("static/ph-bjd.ico")
     myMainwindow.setWindowIcon(myico)
     myMainwindow.show()
     sys.exit(app.exec())
@@ -105,7 +105,7 @@ class mainwindow(QMainWindow, Ui_Mainwindow):
     def settingsClicked(self):  # click对应的槽函数
         self.mySettings = settings()
         self.mySettings.getSettings()
-        myico = QIcon("static/apr-bjd.ico")
+        myico = QIcon("static/ph-bjd.ico")
         self.mySettings.setWindowIcon(myico)
         self.mySettings.show()  # 加上self避免页面一闪而过
 
@@ -410,7 +410,7 @@ class mainwindow(QMainWindow, Ui_Mainwindow):
                     category += '古装 '
                 print('类型为：' + category)
                 self.debugBrowser.append('类型为：' + category)
-                mainTitle = first_english_name + ' ' + year + ' S' + season + ' ' + width + ' ' + source + ' ' + format + ' ' + hdr_format + ' ' + commercial_name + '' + channel_layout + '-' + team
+                mainTitle = first_english_name + ' ' + year + ' S' + season + ' ' + width + ' ' + source + ' ' + format + ' ' + hdr_format + ' ' + commercial_name + ' ' + channel_layout + '-' + team
                 mainTitle = mainTitle.replace('  ', ' ')
                 print(mainTitle)
                 secondTitle = (first_chinese_name + ' | 全' + str(
@@ -419,7 +419,7 @@ class mainwindow(QMainWindow, Ui_Mainwindow):
                 # NPC我要跟你谈恋爱 | 全95集 | 2023年 | 网络收费短剧 | 类型：剧集 爱情
                 fileName = (
                         first_chinese_name + '.' + first_english_name + '.' + year + '.' + ' S' + season + 'E??' + '.' + width + '.' + source + '.' +
-                        format + '.' + hdr_format + '.' + commercial_name + '' + channel_layout + '-' + team)
+                        format + '.' + hdr_format + '.' + commercial_name + '.' + channel_layout + '-' + team)
                 fileName = fileName.replace(' – ', '.')
                 fileName = fileName.replace(': ', '.')
                 fileName = fileName.replace(' ', '.')
