@@ -3,6 +3,7 @@ import glob
 import json
 import os
 import random
+from datetime import datetime
 from tkinter import filedialog, Tk
 
 from torf import Torrent
@@ -235,8 +236,12 @@ def create_torrent(folder_path, torrent_path):
         if os.path.exists(torrent_file_path):
             os.remove(torrent_file_path)
 
-        # 创建 Torrent 对象
-        t = Torrent(path=folder_path, trackers=['http://tracker.example.com/announce'], created_by='ph-bjd')
+        # 获取当前时间
+        current_time = datetime.now()
+
+        # 创建 Torrent 对象，添加当前时间作为创建时间
+        t = Torrent(path=folder_path, trackers=['http://tracker.example.com/announce'], created_by='ph-bjd',
+                    creation_date=current_time)
 
         # 生成和写入 Torrent 文件
         t.generate()

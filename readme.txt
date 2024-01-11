@@ -1,4 +1,4 @@
-Publish Helper for Playlet v1.0.3
+Publish Helper for Playlet v1.0.4
 
 使用前务必请先看设置！！！
 
