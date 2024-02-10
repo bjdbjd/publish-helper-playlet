@@ -23,7 +23,7 @@ static/team.json
 
 软件获取地址：
 
-https://gitee.com/bjdbjd/ph-bjd-playlet/releases
+https://gitee.com/bjdbjd/publish-helper-playlet/releases
 
 Python 3.10
 
